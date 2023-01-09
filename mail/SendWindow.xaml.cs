@@ -17,6 +17,12 @@ namespace mail
             this.user = user;
 
         }
+        public SendWindow(User user,string address)
+        {
+            InitializeComponent();
+            this.user = user;
+            toTxtBox.Text = address.ToString();
+        }
 
         private void SendBtnClick(object sender, RoutedEventArgs e)
         {

@@ -7,7 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="SendBtn" Content="Send" HorizontalAlignment="Left" Height="34" Margin="10,26,0,0" VerticalAlignment="Top" Width="153" Click="SendBtnClick" FontSize="18"/>
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Left">
+                <Button x:Name="SendBtn" Content="Send" HorizontalAlignment="Left" Height="34" Margin="10,26,0,0" VerticalAlignment="Top" Width="153" Click="SendBtnClick" FontSize="18"/>
+                <ListBox x:Name="ForldersListBox"></ListBox>
+            </StackPanel>
+            <TextBlock Margin="5" DockPanel.Dock="Top">Search</TextBlock>
+            <DataGrid  x:Name="dg" MinRowHeight="30" IsReadOnly="True" PreviewMouseRightButtonDown="dgevent" >
+                <DataGrid.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Send message" Click="MenuItem_Click" />
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+            </DataGrid>
+        </DockPanel>
+       
 
     </Grid>
 </Window>

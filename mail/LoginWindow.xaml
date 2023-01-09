@@ -10,8 +10,8 @@
 
 
     <Grid >
-        <TextBox x:Name="EmailTxtBox"  Margin="35,0,35,60" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center"  />
-        <TextBox x:Name="PasswordTxtBox"  Margin="35,20,35,0"  TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" />
+        <TextBox x:Name="EmailTxtBox"  Margin="35,0,35,60" TextWrapping="Wrap" Text="potapchuk.maks@gmail.com" VerticalAlignment="Center"  />
+        <TextBox x:Name="PasswordTxtBox"  Margin="35,20,35,0"  TextWrapping="Wrap" Text="jvgfnbgleisrkcsu" VerticalAlignment="Center" />
         <Button x:Name="LoginBtn" Click="LoginBtnClick" Content="Login"   Margin="70,100,70,0" VerticalAlignment="center"/>
         
     </Grid>
